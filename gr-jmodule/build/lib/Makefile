@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joel/joel/gr-jmodule
+CMAKE_SOURCE_DIR = /home/joel/joel/prac/gr-jmodule
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joel/joel/gr-jmodule/build
+CMAKE_BINARY_DIR = /home/joel/joel/prac/gr-jmodule/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -117,14 +117,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/joel/joel/gr-jmodule/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/joel/joel/gr-jmodule/build/CMakeFiles /home/joel/joel/gr-jmodule/build/lib/CMakeFiles/progress.marks
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joel/joel/gr-jmodule/build/CMakeFiles 0
+	cd /home/joel/joel/prac/gr-jmodule/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/joel/joel/prac/gr-jmodule/build/CMakeFiles /home/joel/joel/prac/gr-jmodule/build/lib/CMakeFiles/progress.marks
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joel/joel/prac/gr-jmodule/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -133,22 +133,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/joel/joel/gr-jmodule/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/joel/joel/prac/gr-jmodule/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/CMakeFiles/gnuradio-jmodule.dir/rule:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/gnuradio-jmodule.dir/rule
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/gnuradio-jmodule.dir/rule
 .PHONY : lib/CMakeFiles/gnuradio-jmodule.dir/rule
 
 # Convenience name for target.
@@ -157,12 +157,12 @@ gnuradio-jmodule: lib/CMakeFiles/gnuradio-jmodule.dir/rule
 
 # fast build rule for target.
 gnuradio-jmodule/fast:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/gnuradio-jmodule.dir/build.make lib/CMakeFiles/gnuradio-jmodule.dir/build
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/gnuradio-jmodule.dir/build.make lib/CMakeFiles/gnuradio-jmodule.dir/build
 .PHONY : gnuradio-jmodule/fast
 
 # Convenience name for target.
 lib/CMakeFiles/test-jmodule.dir/rule:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/test-jmodule.dir/rule
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/test-jmodule.dir/rule
 .PHONY : lib/CMakeFiles/test-jmodule.dir/rule
 
 # Convenience name for target.
@@ -171,7 +171,7 @@ test-jmodule: lib/CMakeFiles/test-jmodule.dir/rule
 
 # fast build rule for target.
 test-jmodule/fast:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/build
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/build
 .PHONY : test-jmodule/fast
 
 jblock_impl.o: jblock_impl.cc.o
@@ -179,7 +179,7 @@ jblock_impl.o: jblock_impl.cc.o
 
 # target to build an object file
 jblock_impl.cc.o:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/gnuradio-jmodule.dir/build.make lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/gnuradio-jmodule.dir/build.make lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o
 .PHONY : jblock_impl.cc.o
 
 jblock_impl.i: jblock_impl.cc.i
@@ -187,7 +187,7 @@ jblock_impl.i: jblock_impl.cc.i
 
 # target to preprocess a source file
 jblock_impl.cc.i:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/gnuradio-jmodule.dir/build.make lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.i
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/gnuradio-jmodule.dir/build.make lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.i
 .PHONY : jblock_impl.cc.i
 
 jblock_impl.s: jblock_impl.cc.s
@@ -195,7 +195,7 @@ jblock_impl.s: jblock_impl.cc.s
 
 # target to generate assembly for a file
 jblock_impl.cc.s:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/gnuradio-jmodule.dir/build.make lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.s
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/gnuradio-jmodule.dir/build.make lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.s
 .PHONY : jblock_impl.cc.s
 
 qa_jmodule.o: qa_jmodule.cc.o
@@ -203,7 +203,7 @@ qa_jmodule.o: qa_jmodule.cc.o
 
 # target to build an object file
 qa_jmodule.cc.o:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.o
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.o
 .PHONY : qa_jmodule.cc.o
 
 qa_jmodule.i: qa_jmodule.cc.i
@@ -211,7 +211,7 @@ qa_jmodule.i: qa_jmodule.cc.i
 
 # target to preprocess a source file
 qa_jmodule.cc.i:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.i
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.i
 .PHONY : qa_jmodule.cc.i
 
 qa_jmodule.s: qa_jmodule.cc.s
@@ -219,7 +219,7 @@ qa_jmodule.s: qa_jmodule.cc.s
 
 # target to generate assembly for a file
 qa_jmodule.cc.s:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.s
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.s
 .PHONY : qa_jmodule.cc.s
 
 test_jmodule.o: test_jmodule.cc.o
@@ -227,7 +227,7 @@ test_jmodule.o: test_jmodule.cc.o
 
 # target to build an object file
 test_jmodule.cc.o:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.o
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.o
 .PHONY : test_jmodule.cc.o
 
 test_jmodule.i: test_jmodule.cc.i
@@ -235,7 +235,7 @@ test_jmodule.i: test_jmodule.cc.i
 
 # target to preprocess a source file
 test_jmodule.cc.i:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.i
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.i
 .PHONY : test_jmodule.cc.i
 
 test_jmodule.s: test_jmodule.cc.s
@@ -243,7 +243,7 @@ test_jmodule.s: test_jmodule.cc.s
 
 # target to generate assembly for a file
 test_jmodule.cc.s:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.s
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f lib/CMakeFiles/test-jmodule.dir/build.make lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.s
 .PHONY : test_jmodule.cc.s
 
 # Help Target
@@ -281,6 +281,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/joel/joel/gr-jmodule/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/joel/joel/prac/gr-jmodule/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -16,7 +16,7 @@ jmodule/api.h
 gr_sync_block.h
 -
 
-/home/joel/joel/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx
+/home/joel/joel/prac/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx
 Python.h
 -
 string.h
@@ -24,7 +24,7 @@ string.h
 stdexcept
 -
 gnuradio_swig_bug_workaround.h
-/home/joel/joel/gr-jmodule/build/swig/gnuradio_swig_bug_workaround.h
+/home/joel/joel/prac/gr-jmodule/build/swig/gnuradio_swig_bug_workaround.h
 gr_types.h
 -
 stddef.h
@@ -68,7 +68,7 @@ functional
 iterator
 -
 jmodule/jblock.h
-/home/joel/joel/gr-jmodule/build/swig/jmodule/jblock.h
+/home/joel/joel/prac/gr-jmodule/build/swig/jmodule/jblock.h
 limits.h
 -
 

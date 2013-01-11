@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/joel/joel/gr-jmodule/lib/qa_jmodule.cc
+/home/joel/joel/prac/gr-jmodule/lib/qa_jmodule.cc
 qa_jmodule.h
-/home/joel/joel/gr-jmodule/lib/qa_jmodule.h
+/home/joel/joel/prac/gr-jmodule/lib/qa_jmodule.h
 
-/home/joel/joel/gr-jmodule/lib/qa_jmodule.h
+/home/joel/joel/prac/gr-jmodule/lib/qa_jmodule.h
 gruel/attributes.h
 -
 cppunit/TestSuite.h
 -
 
-/home/joel/joel/gr-jmodule/lib/test_jmodule.cc
+/home/joel/joel/prac/gr-jmodule/lib/test_jmodule.cc
 cppunit/TextTestRunner.h
 -
 cppunit/XmlOutputter.h
@@ -24,7 +24,7 @@ cppunit/XmlOutputter.h
 gr_unittests.h
 -
 qa_jmodule.h
-/home/joel/joel/gr-jmodule/lib/qa_jmodule.h
+/home/joel/joel/prac/gr-jmodule/lib/qa_jmodule.h
 iostream
 -
 

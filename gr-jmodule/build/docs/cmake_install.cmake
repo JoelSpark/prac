@@ -1,4 +1,4 @@
-# Install script for directory: /home/joel/joel/gr-jmodule/docs
+# Install script for directory: /home/joel/joel/prac/gr-jmodule/docs
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

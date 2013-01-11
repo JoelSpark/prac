@@ -4,8 +4,8 @@
 lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o
  ../include/jmodule/api.h
  ../include/jmodule/jblock.h
- /home/joel/joel/gr-jmodule/lib/jblock_impl.cc
- /home/joel/joel/gr-jmodule/lib/jblock_impl.h
+ /home/joel/joel/prac/gr-jmodule/lib/jblock_impl.cc
+ /home/joel/joel/prac/gr-jmodule/lib/jblock_impl.h
  /usr/local/include/gnuradio/gr_basic_block.h
  /usr/local/include/gnuradio/gr_block.h
  /usr/local/include/gnuradio/gr_complex.h

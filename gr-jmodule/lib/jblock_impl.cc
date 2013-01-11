@@ -28,8 +28,7 @@
 namespace gr {
   namespace jmodule {
 
-    jblock::sptr
-    jblock::make()
+    jblock::sptr jblock::make()
     {
       return gnuradio::get_initial_sptr (new jblock_impl());
     }
@@ -64,7 +63,8 @@ static const int MAX_OUT=1;
         const float *in = (const float *) input_items[0];
         float *out = (float *) output_items[0];
         for (int i=0;i<noutput_items;i++){
-        out[i] = in[i] * 2;
+        d_k=4;
+        out[i] = in[i] * d_k;
         }
 
         return noutput_items;

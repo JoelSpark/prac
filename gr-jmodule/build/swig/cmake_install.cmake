@@ -1,4 +1,4 @@
-# Install script for directory: /home/joel/joel/gr-jmodule/swig
+# Install script for directory: /home/joel/joel/prac/gr-jmodule/swig
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/jmodule/_jmodule_swig.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/jmodule" TYPE MODULE FILES "/home/joel/joel/gr-jmodule/build/swig/_jmodule_swig.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/jmodule" TYPE MODULE FILES "/home/joel/joel/prac/gr-jmodule/build/swig/_jmodule_swig.so")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/jmodule/_jmodule_swig.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/jmodule/_jmodule_swig.so")
     FILE(RPATH_REMOVE
@@ -51,17 +51,17 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/jmodule" TYPE FILE FILES "/home/joel/joel/gr-jmodule/build/swig/jmodule_swig.py")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/jmodule" TYPE FILE FILES "/home/joel/joel/prac/gr-jmodule/build/swig/jmodule_swig.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/jmodule" TYPE FILE FILES
-    "/home/joel/joel/gr-jmodule/build/swig/jmodule_swig.pyc"
-    "/home/joel/joel/gr-jmodule/build/swig/jmodule_swig.pyo"
+    "/home/joel/joel/prac/gr-jmodule/build/swig/jmodule_swig.pyc"
+    "/home/joel/joel/prac/gr-jmodule/build/swig/jmodule_swig.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/jmodule/jmodule/swig" TYPE FILE FILES "/home/joel/joel/gr-jmodule/swig/jmodule_swig.i")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/jmodule/jmodule/swig" TYPE FILE FILES "/home/joel/joel/prac/gr-jmodule/swig/jmodule_swig.i")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

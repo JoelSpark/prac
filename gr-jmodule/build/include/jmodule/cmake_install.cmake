@@ -1,4 +1,4 @@
-# Install script for directory: /home/joel/joel/gr-jmodule/include/jmodule
+# Install script for directory: /home/joel/joel/prac/gr-jmodule/include/jmodule
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/jmodule" TYPE FILE FILES
-    "/home/joel/joel/gr-jmodule/include/jmodule/api.h"
-    "/home/joel/joel/gr-jmodule/include/jmodule/jblock.h"
+    "/home/joel/joel/prac/gr-jmodule/include/jmodule/api.h"
+    "/home/joel/joel/prac/gr-jmodule/include/jmodule/jblock.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joel/joel/gr-jmodule
+CMAKE_SOURCE_DIR = /home/joel/joel/prac/gr-jmodule
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joel/joel/gr-jmodule/build
+CMAKE_BINARY_DIR = /home/joel/joel/prac/gr-jmodule/build
 
 # Include any dependencies generated for this target.
 include lib/CMakeFiles/test-jmodule.dir/depend.make
@@ -48,17 +48,17 @@ include lib/CMakeFiles/test-jmodule.dir/flags.make
 
 lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.o: lib/CMakeFiles/test-jmodule.dir/flags.make
 lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.o: ../lib/test_jmodule.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/joel/joel/gr-jmodule/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/joel/joel/prac/gr-jmodule/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.o"
-	cd /home/joel/joel/gr-jmodule/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test-jmodule.dir/test_jmodule.cc.o -c /home/joel/joel/gr-jmodule/lib/test_jmodule.cc
+	cd /home/joel/joel/prac/gr-jmodule/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test-jmodule.dir/test_jmodule.cc.o -c /home/joel/joel/prac/gr-jmodule/lib/test_jmodule.cc
 
 lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-jmodule.dir/test_jmodule.cc.i"
-	cd /home/joel/joel/gr-jmodule/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/joel/joel/gr-jmodule/lib/test_jmodule.cc > CMakeFiles/test-jmodule.dir/test_jmodule.cc.i
+	cd /home/joel/joel/prac/gr-jmodule/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/joel/joel/prac/gr-jmodule/lib/test_jmodule.cc > CMakeFiles/test-jmodule.dir/test_jmodule.cc.i
 
 lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-jmodule.dir/test_jmodule.cc.s"
-	cd /home/joel/joel/gr-jmodule/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/joel/joel/gr-jmodule/lib/test_jmodule.cc -o CMakeFiles/test-jmodule.dir/test_jmodule.cc.s
+	cd /home/joel/joel/prac/gr-jmodule/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/joel/joel/prac/gr-jmodule/lib/test_jmodule.cc -o CMakeFiles/test-jmodule.dir/test_jmodule.cc.s
 
 lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.o.requires:
 .PHONY : lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.o.requires
@@ -71,17 +71,17 @@ lib/CMakeFiles/test-jmodule.dir/test_jmodule.cc.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.o: lib/CMakeFiles/test-jmodule.dir/flags.make
 lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.o: ../lib/qa_jmodule.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/joel/joel/gr-jmodule/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/joel/joel/prac/gr-jmodule/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.o"
-	cd /home/joel/joel/gr-jmodule/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test-jmodule.dir/qa_jmodule.cc.o -c /home/joel/joel/gr-jmodule/lib/qa_jmodule.cc
+	cd /home/joel/joel/prac/gr-jmodule/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test-jmodule.dir/qa_jmodule.cc.o -c /home/joel/joel/prac/gr-jmodule/lib/qa_jmodule.cc
 
 lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-jmodule.dir/qa_jmodule.cc.i"
-	cd /home/joel/joel/gr-jmodule/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/joel/joel/gr-jmodule/lib/qa_jmodule.cc > CMakeFiles/test-jmodule.dir/qa_jmodule.cc.i
+	cd /home/joel/joel/prac/gr-jmodule/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/joel/joel/prac/gr-jmodule/lib/qa_jmodule.cc > CMakeFiles/test-jmodule.dir/qa_jmodule.cc.i
 
 lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-jmodule.dir/qa_jmodule.cc.s"
-	cd /home/joel/joel/gr-jmodule/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/joel/joel/gr-jmodule/lib/qa_jmodule.cc -o CMakeFiles/test-jmodule.dir/qa_jmodule.cc.s
+	cd /home/joel/joel/prac/gr-jmodule/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/joel/joel/prac/gr-jmodule/lib/qa_jmodule.cc -o CMakeFiles/test-jmodule.dir/qa_jmodule.cc.s
 
 lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.o.requires:
 .PHONY : lib/CMakeFiles/test-jmodule.dir/qa_jmodule.cc.o.requires
@@ -114,7 +114,7 @@ lib/test-jmodule: /usr/local/lib/libgnuradio-core.so
 lib/test-jmodule: lib/CMakeFiles/test-jmodule.dir/build.make
 lib/test-jmodule: lib/CMakeFiles/test-jmodule.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable test-jmodule"
-	cd /home/joel/joel/gr-jmodule/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-jmodule.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/joel/joel/prac/gr-jmodule/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-jmodule.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/CMakeFiles/test-jmodule.dir/build: lib/test-jmodule
@@ -125,10 +125,10 @@ lib/CMakeFiles/test-jmodule.dir/requires: lib/CMakeFiles/test-jmodule.dir/qa_jmo
 .PHONY : lib/CMakeFiles/test-jmodule.dir/requires
 
 lib/CMakeFiles/test-jmodule.dir/clean:
-	cd /home/joel/joel/gr-jmodule/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/test-jmodule.dir/cmake_clean.cmake
+	cd /home/joel/joel/prac/gr-jmodule/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/test-jmodule.dir/cmake_clean.cmake
 .PHONY : lib/CMakeFiles/test-jmodule.dir/clean
 
 lib/CMakeFiles/test-jmodule.dir/depend:
-	cd /home/joel/joel/gr-jmodule/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joel/joel/gr-jmodule /home/joel/joel/gr-jmodule/lib /home/joel/joel/gr-jmodule/build /home/joel/joel/gr-jmodule/build/lib /home/joel/joel/gr-jmodule/build/lib/CMakeFiles/test-jmodule.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joel/joel/prac/gr-jmodule/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joel/joel/prac/gr-jmodule /home/joel/joel/prac/gr-jmodule/lib /home/joel/joel/prac/gr-jmodule/build /home/joel/joel/prac/gr-jmodule/build/lib /home/joel/joel/prac/gr-jmodule/build/lib/CMakeFiles/test-jmodule.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/CMakeFiles/test-jmodule.dir/depend
 

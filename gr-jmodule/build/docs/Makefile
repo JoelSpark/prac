@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joel/joel/gr-jmodule
+CMAKE_SOURCE_DIR = /home/joel/joel/prac/gr-jmodule
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joel/joel/gr-jmodule/build
+CMAKE_BINARY_DIR = /home/joel/joel/prac/gr-jmodule/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -117,14 +117,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/joel/joel/gr-jmodule/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/joel/joel/gr-jmodule/build/CMakeFiles /home/joel/joel/gr-jmodule/build/docs/CMakeFiles/progress.marks
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 docs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joel/joel/gr-jmodule/build/CMakeFiles 0
+	cd /home/joel/joel/prac/gr-jmodule/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/joel/joel/prac/gr-jmodule/build/CMakeFiles /home/joel/joel/prac/gr-jmodule/build/docs/CMakeFiles/progress.marks
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 docs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joel/joel/prac/gr-jmodule/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 docs/clean
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 docs/clean
 .PHONY : clean
 
 # The main clean target
@@ -133,17 +133,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 docs/preinstall
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 docs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/joel/joel/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 docs/preinstall
+	cd /home/joel/joel/prac/gr-jmodule/build && $(MAKE) -f CMakeFiles/Makefile2 docs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/joel/joel/gr-jmodule/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/joel/joel/prac/gr-jmodule/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -170,6 +170,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/joel/joel/gr-jmodule/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/joel/joel/prac/gr-jmodule/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

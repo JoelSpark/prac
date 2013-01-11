@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joel/joel/gr-jmodule
+CMAKE_SOURCE_DIR = /home/joel/joel/prac/gr-jmodule
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joel/joel/gr-jmodule/build
+CMAKE_BINARY_DIR = /home/joel/joel/prac/gr-jmodule/build
 
 # Utility rule file for uninstall.
 
@@ -43,7 +43,7 @@ CMAKE_BINARY_DIR = /home/joel/joel/gr-jmodule/build
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /home/joel/joel/gr-jmodule/build/cmake_uninstall.cmake
+	/usr/bin/cmake -P /home/joel/joel/prac/gr-jmodule/build/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -58,6 +58,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/joel/joel/gr-jmodule/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joel/joel/gr-jmodule /home/joel/joel/gr-jmodule /home/joel/joel/gr-jmodule/build /home/joel/joel/gr-jmodule/build /home/joel/joel/gr-jmodule/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joel/joel/prac/gr-jmodule/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joel/joel/prac/gr-jmodule /home/joel/joel/prac/gr-jmodule /home/joel/joel/prac/gr-jmodule/build /home/joel/joel/prac/gr-jmodule/build /home/joel/joel/prac/gr-jmodule/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

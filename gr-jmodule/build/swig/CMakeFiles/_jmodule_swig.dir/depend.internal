@@ -4,7 +4,7 @@
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o
  ../include/jmodule/api.h
  ../include/jmodule/jblock.h
- /home/joel/joel/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx
+ /home/joel/joel/prac/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx
  /usr/include/python2.7/Python.h
  /usr/include/python2.7/abstract.h
  /usr/include/python2.7/boolobject.h

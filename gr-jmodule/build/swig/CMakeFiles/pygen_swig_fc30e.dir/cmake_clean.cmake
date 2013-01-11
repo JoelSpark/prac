@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "jmodule_swigPYTHON_wrap.cxx"
   "jmodule_swig.py"
-  "CMakeFiles/pygen_swig_b82c1"
+  "CMakeFiles/pygen_swig_fc30e"
   "jmodule_swig.pyc"
   "jmodule_swig.pyo"
   "jmodule_swigPYTHON_wrap.cxx"
@@ -11,5 +11,5 @@ FILE(REMOVE_RECURSE
 
 # Per-language clean rules from dependency scanning.
 FOREACH(lang)
-  INCLUDE(CMakeFiles/pygen_swig_b82c1.dir/cmake_clean_${lang}.cmake OPTIONAL)
+  INCLUDE(CMakeFiles/pygen_swig_fc30e.dir/cmake_clean_${lang}.cmake OPTIONAL)
 ENDFOREACH(lang)

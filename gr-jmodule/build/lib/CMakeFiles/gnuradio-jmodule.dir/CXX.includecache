@@ -16,15 +16,15 @@ jmodule/api.h
 gr_sync_block.h
 -
 
-/home/joel/joel/gr-jmodule/lib/jblock_impl.cc
+/home/joel/joel/prac/gr-jmodule/lib/jblock_impl.cc
 config.h
-/home/joel/joel/gr-jmodule/lib/config.h
+/home/joel/joel/prac/gr-jmodule/lib/config.h
 gr_io_signature.h
 -
 jblock_impl.h
-/home/joel/joel/gr-jmodule/lib/jblock_impl.h
+/home/joel/joel/prac/gr-jmodule/lib/jblock_impl.h
 
-/home/joel/joel/gr-jmodule/lib/jblock_impl.h
+/home/joel/joel/prac/gr-jmodule/lib/jblock_impl.h
 jmodule/jblock.h
 -
 

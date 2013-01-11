@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joel/joel/gr-jmodule
+CMAKE_SOURCE_DIR = /home/joel/joel/prac/gr-jmodule
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joel/joel/gr-jmodule/build
+CMAKE_BINARY_DIR = /home/joel/joel/prac/gr-jmodule/build
 
 # Include any dependencies generated for this target.
 include swig/CMakeFiles/_jmodule_swig.dir/depend.make
@@ -48,17 +48,17 @@ include swig/CMakeFiles/_jmodule_swig.dir/flags.make
 
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: swig/CMakeFiles/_jmodule_swig.dir/flags.make
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: swig/jmodule_swigPYTHON_wrap.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/joel/joel/gr-jmodule/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/joel/joel/prac/gr-jmodule/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o"
-	cd /home/joel/joel/gr-jmodule/build/swig && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o -c /home/joel/joel/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx
+	cd /home/joel/joel/prac/gr-jmodule/build/swig && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o -c /home/joel/joel/prac/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx
 
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.i"
-	cd /home/joel/joel/gr-jmodule/build/swig && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/joel/joel/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx > CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.i
+	cd /home/joel/joel/prac/gr-jmodule/build/swig && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/joel/joel/prac/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx > CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.i
 
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.s"
-	cd /home/joel/joel/gr-jmodule/build/swig && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/joel/joel/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx -o CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.s
+	cd /home/joel/joel/prac/gr-jmodule/build/swig && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/joel/joel/prac/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx -o CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.s
 
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o.requires:
 .PHONY : swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o.requires
@@ -76,18 +76,18 @@ swig/jmodule_swigPYTHON_wrap.cxx: ../swig/jmodule_swig.i
 swig/jmodule_swigPYTHON_wrap.cxx: /usr/local/include/gnuradio/swig/gruel_common.i
 swig/jmodule_swigPYTHON_wrap.cxx: swig/jmodule_swig.tag
 swig/jmodule_swigPYTHON_wrap.cxx: ../swig/jmodule_swig.i
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/joel/joel/gr-jmodule/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/joel/joel/prac/gr-jmodule/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
-	cd /home/joel/joel/gr-jmodule/build/swig && /usr/bin/cmake -E make_directory /home/joel/joel/gr-jmodule/build/swig
-	cd /home/joel/joel/gr-jmodule/build/swig && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module jmodule_swig -I/usr/local/include/gnuradio/swig -I/usr/local/include/gruel/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/joel/joel/gr-jmodule/swig -I/home/joel/joel/gr-jmodule/build/swig -outdir /home/joel/joel/gr-jmodule/build/swig -c++ -I/home/joel/joel/gr-jmodule/include -I/usr/include -I/usr/local/include -I/usr/local/include/gnuradio -I/usr/local/include/gnuradio/swig -I/usr/local/include/gruel/swig -I/usr/include/python2.7 -I/home/joel/joel/gr-jmodule/swig -I/home/joel/joel/gr-jmodule/build/swig -o /home/joel/joel/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx /home/joel/joel/gr-jmodule/swig/jmodule_swig.i
+	cd /home/joel/joel/prac/gr-jmodule/build/swig && /usr/bin/cmake -E make_directory /home/joel/joel/prac/gr-jmodule/build/swig
+	cd /home/joel/joel/prac/gr-jmodule/build/swig && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module jmodule_swig -I/usr/local/include/gnuradio/swig -I/usr/local/include/gruel/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/joel/joel/prac/gr-jmodule/swig -I/home/joel/joel/prac/gr-jmodule/build/swig -outdir /home/joel/joel/prac/gr-jmodule/build/swig -c++ -I/home/joel/joel/prac/gr-jmodule/include -I/usr/include -I/usr/local/include -I/usr/local/include/gnuradio -I/usr/local/include/gnuradio/swig -I/usr/local/include/gruel/swig -I/usr/include/python2.7 -I/home/joel/joel/prac/gr-jmodule/swig -I/home/joel/joel/prac/gr-jmodule/build/swig -o /home/joel/joel/prac/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx /home/joel/joel/prac/gr-jmodule/swig/jmodule_swig.i
 
 swig/jmodule_swig.py: swig/jmodule_swigPYTHON_wrap.cxx
 
 swig/jmodule_swig.tag: swig/_jmodule_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/joel/joel/gr-jmodule/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/joel/joel/prac/gr-jmodule/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating jmodule_swig.tag"
-	cd /home/joel/joel/gr-jmodule/build/swig && ./_jmodule_swig_swig_tag
-	cd /home/joel/joel/gr-jmodule/build/swig && /usr/bin/cmake -E touch /home/joel/joel/gr-jmodule/build/swig/jmodule_swig.tag
+	cd /home/joel/joel/prac/gr-jmodule/build/swig && ./_jmodule_swig_swig_tag
+	cd /home/joel/joel/prac/gr-jmodule/build/swig && /usr/bin/cmake -E touch /home/joel/joel/prac/gr-jmodule/build/swig/jmodule_swig.tag
 
 # Object files for target _jmodule_swig
 _jmodule_swig_OBJECTS = \
@@ -106,7 +106,7 @@ swig/_jmodule_swig.so: /usr/local/lib/libgnuradio-core.so
 swig/_jmodule_swig.so: swig/CMakeFiles/_jmodule_swig.dir/build.make
 swig/_jmodule_swig.so: swig/CMakeFiles/_jmodule_swig.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module _jmodule_swig.so"
-	cd /home/joel/joel/gr-jmodule/build/swig && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_jmodule_swig.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/joel/joel/prac/gr-jmodule/build/swig && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_jmodule_swig.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 swig/CMakeFiles/_jmodule_swig.dir/build: swig/_jmodule_swig.so
@@ -116,12 +116,12 @@ swig/CMakeFiles/_jmodule_swig.dir/requires: swig/CMakeFiles/_jmodule_swig.dir/jm
 .PHONY : swig/CMakeFiles/_jmodule_swig.dir/requires
 
 swig/CMakeFiles/_jmodule_swig.dir/clean:
-	cd /home/joel/joel/gr-jmodule/build/swig && $(CMAKE_COMMAND) -P CMakeFiles/_jmodule_swig.dir/cmake_clean.cmake
+	cd /home/joel/joel/prac/gr-jmodule/build/swig && $(CMAKE_COMMAND) -P CMakeFiles/_jmodule_swig.dir/cmake_clean.cmake
 .PHONY : swig/CMakeFiles/_jmodule_swig.dir/clean
 
 swig/CMakeFiles/_jmodule_swig.dir/depend: swig/jmodule_swigPYTHON_wrap.cxx
 swig/CMakeFiles/_jmodule_swig.dir/depend: swig/jmodule_swig.py
 swig/CMakeFiles/_jmodule_swig.dir/depend: swig/jmodule_swig.tag
-	cd /home/joel/joel/gr-jmodule/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joel/joel/gr-jmodule /home/joel/joel/gr-jmodule/swig /home/joel/joel/gr-jmodule/build /home/joel/joel/gr-jmodule/build/swig /home/joel/joel/gr-jmodule/build/swig/CMakeFiles/_jmodule_swig.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joel/joel/prac/gr-jmodule/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joel/joel/prac/gr-jmodule /home/joel/joel/prac/gr-jmodule/swig /home/joel/joel/prac/gr-jmodule/build /home/joel/joel/prac/gr-jmodule/build/swig /home/joel/joel/prac/gr-jmodule/build/swig/CMakeFiles/_jmodule_swig.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : swig/CMakeFiles/_jmodule_swig.dir/depend
 
