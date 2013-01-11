@@ -1,0 +1,8 @@
+/home/joel/joel/gr-jmodule/build/swig/CMakeFiles/_jmodule_swig.dir
+/home/joel/joel/gr-jmodule/build/swig/CMakeFiles/_jmodule_swig_swig_tag.dir
+/home/joel/joel/gr-jmodule/build/lib/CMakeFiles/gnuradio-jmodule.dir
+/home/joel/joel/gr-jmodule/build/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/home/joel/joel/gr-jmodule/build/python/CMakeFiles/pygen_python_5c093.dir
+/home/joel/joel/gr-jmodule/build/swig/CMakeFiles/pygen_swig_b82c1.dir
+/home/joel/joel/gr-jmodule/build/lib/CMakeFiles/test-jmodule.dir
+/home/joel/joel/gr-jmodule/build/CMakeFiles/uninstall.dir

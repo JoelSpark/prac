@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+
+<block>
+  <name>Jblock</name>
+  <key>jmodule_jblock</key>
+  <category>JMODULE</category>
+  <import>import jmodule</import>
+  <make>jmodule.jblock()</make>
+
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>

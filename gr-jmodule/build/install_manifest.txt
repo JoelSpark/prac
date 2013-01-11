@@ -1,0 +1,12 @@
+/usr/local/include/jmodule/api.h
+/usr/local/include/jmodule/jblock.h
+/usr/local/lib/libgnuradio-jmodule.so
+/usr/local/lib/python2.7/dist-packages/jmodule/_jmodule_swig.so
+/usr/local/lib/python2.7/dist-packages/jmodule/jmodule_swig.py
+/usr/local/lib/python2.7/dist-packages/jmodule/jmodule_swig.pyc
+/usr/local/lib/python2.7/dist-packages/jmodule/jmodule_swig.pyo
+/usr/local/include/jmodule/jmodule/swig/jmodule_swig.i
+/usr/local/lib/python2.7/dist-packages/jmodule/__init__.py
+/usr/local/lib/python2.7/dist-packages/jmodule/__init__.pyc
+/usr/local/lib/python2.7/dist-packages/jmodule/__init__.pyo
+/usr/local/share/gnuradio/grc/blocks/jmodule_jblock.xml
