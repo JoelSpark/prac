@@ -31,7 +31,7 @@ namespace gr {
     private:
       // Nothing to declare in this block.
     public:
-      jblock_impl();
+      jblock_impl(float k);
       ~jblock_impl();
 
       // Where all the action really happens

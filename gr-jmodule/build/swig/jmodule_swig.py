@@ -160,19 +160,27 @@ class jblock(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def make():
-        """make() -> sptr"""
-        return _jmodule_swig.jblock_make()
+    def make(*args, **kwargs):
+        """make(float k) -> sptr"""
+        return _jmodule_swig.jblock_make(*args, **kwargs)
 
     make = staticmethod(make)
+    def k(self):
+        """k(self) -> float"""
+        return _jmodule_swig.jblock_k(self)
+
+    def set_k(self, *args, **kwargs):
+        """set_k(self, float k)"""
+        return _jmodule_swig.jblock_set_k(self, *args, **kwargs)
+
     __swig_destroy__ = _jmodule_swig.delete_jblock
     __del__ = lambda self : None;
 jblock_swigregister = _jmodule_swig.jblock_swigregister
 jblock_swigregister(jblock)
 
-def jblock_make():
-  """jblock_make() -> sptr"""
-  return _jmodule_swig.jblock_make()
+def jblock_make(*args, **kwargs):
+  """jblock_make(float k) -> sptr"""
+  return _jmodule_swig.jblock_make(*args, **kwargs)
 
 class jblock_sptr(object):
     """Proxy of C++ boost::shared_ptr<(gr::jmodule::jblock)> class"""
@@ -192,9 +200,17 @@ class jblock_sptr(object):
 
     __swig_destroy__ = _jmodule_swig.delete_jblock_sptr
     __del__ = lambda self : None;
-    def make(self):
-        """make(self) -> sptr"""
-        return _jmodule_swig.jblock_sptr_make(self)
+    def make(self, *args, **kwargs):
+        """make(self, float k) -> sptr"""
+        return _jmodule_swig.jblock_sptr_make(self, *args, **kwargs)
+
+    def k(self):
+        """k(self) -> float"""
+        return _jmodule_swig.jblock_sptr_k(self)
+
+    def set_k(self, *args, **kwargs):
+        """set_k(self, float k)"""
+        return _jmodule_swig.jblock_sptr_set_k(self, *args, **kwargs)
 
     def history(self):
         """history(self) -> unsigned int"""

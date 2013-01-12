@@ -48,9 +48,9 @@ namespace gr {
         * class. jmodule::jblock::make is the public interface for
         * creating new instances.
         */
-       static sptr make();
+       static sptr make(float k);
 
-       float k() {return d_k;}
+       float k() const {return d_k;}
        void set_k(float k) {d_k=k;}
     };
 

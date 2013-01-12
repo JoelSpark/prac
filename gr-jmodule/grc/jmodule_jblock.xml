@@ -6,9 +6,16 @@
   <key>jmodule_jblock</key>
   <category>JMODULE</category>
   <import>import jmodule</import>
-  <make>jmodule.jblock()</make>
+  <make>jmodule.jblock($k)</make>
+  <callback>set_k($k)</callback>
 
-  <sink>
+  <param>
+    <name>K</name>
+    <key>k</key>
+    <type>real</type>
+  </param>
+ 
+ <sink>
     <name>in</name>
     <type>float</type>
   </sink>

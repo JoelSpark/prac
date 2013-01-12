@@ -28,9 +28,9 @@
 namespace gr {
   namespace jmodule {
 
-    jblock::sptr jblock::make()
-    {
-      return gnuradio::get_initial_sptr (new jblock_impl());
+    jblock::sptr jblock::make(float k)
+    { 
+      return gnuradio::get_initial_sptr (new jblock_impl(k));
     }
 
 static const int MIN_IN=1;
@@ -42,11 +42,11 @@ static const int MAX_OUT=1;
     /*
      * The private constructor
      */
-    jblock_impl::jblock_impl()
+    jblock_impl::jblock_impl(float k)
       : gr_sync_block("jblock",
 		      gr_make_io_signature(MIN_IN, MAX_IN, sizeof (float)),
 		      gr_make_io_signature(MIN_IN, MAX_IN, sizeof (float)))
-    {}
+    {d_k=k;}
 
     /*
      * Our virtual destructor.
@@ -63,7 +63,6 @@ static const int MAX_OUT=1;
         const float *in = (const float *) input_items[0];
         float *out = (float *) output_items[0];
         for (int i=0;i<noutput_items;i++){
-        d_k=4;
         out[i] = in[i] * d_k;
         }
 

@@ -11,3 +11,4 @@
 
 %include "jmodule/jblock.h"
 GR_SWIG_BLOCK_MAGIC2(jmodule, jblock);
+

@@ -4366,6 +4366,32 @@ namespace swig
 #include "jmodule/jblock.h"
 
 
+SWIGINTERN int
+SWIG_AsVal_float (PyObject * obj, float *val)
+{
+  double v;
+  int res = SWIG_AsVal_double (obj, &v);
+  if (SWIG_IsOK(res)) {
+    if ((v < -FLT_MAX || v > FLT_MAX)) {
+      return SWIG_OverflowError;
+    } else {
+      if (val) *val = static_cast< float >(v);
+    }
+  }  
+  return res;
+}
+
+
+  #define SWIG_From_double   PyFloat_FromDouble 
+
+
+SWIGINTERNINLINE PyObject *
+SWIG_From_float  (float value)
+{    
+  return SWIG_From_double  (value);
+}
+
+
 SWIGINTERNINLINE PyObject* 
 SWIG_From_unsigned_SS_long  (unsigned long value)
 {
@@ -4386,9 +4412,6 @@ SWIG_From_int  (int value)
 {    
   return SWIG_From_long  (value);
 }
-
-
-  #define SWIG_From_double   PyFloat_FromDouble 
 
 
 #include <limits.h>
@@ -5416,13 +5439,26 @@ SWIGINTERN PyObject *SwigPyIterator_swigregister(PyObject *SWIGUNUSEDPARM(self),
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_jblock_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_jblock_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
+  float arg1 ;
+  float val1 ;
+  int ecode1 = 0 ;
+  PyObject * obj0 = 0 ;
+  char *  kwnames[] = {
+    (char *) "k", NULL 
+  };
   gr::jmodule::jblock::sptr result;
   
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"O:jblock_make",kwnames,&obj0)) SWIG_fail;
+  ecode1 = SWIG_AsVal_float(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "jblock_make" "', argument " "1"" of type '" "float""'");
+  } 
+  arg1 = static_cast< float >(val1);
   {
     try {
-      result = gr::jmodule::jblock::make();
+      result = gr::jmodule::jblock::make(arg1);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5433,6 +5469,83 @@ SWIGINTERN PyObject *_wrap_jblock_make(PyObject *SWIGUNUSEDPARM(self), PyObject 
     
   }
   resultobj = SWIG_NewPointerObj((new gr::jmodule::jblock::sptr(static_cast< const gr::jmodule::jblock::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__jmodule__jblock_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_jblock_k(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  gr::jmodule::jblock *arg1 = (gr::jmodule::jblock *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"jblock_k",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_gr__jmodule__jblock, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "jblock_k" "', argument " "1"" of type '" "gr::jmodule::jblock const *""'"); 
+  }
+  arg1 = reinterpret_cast< gr::jmodule::jblock * >(argp1);
+  {
+    try {
+      result = (float)((gr::jmodule::jblock const *)arg1)->k();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_jblock_set_k(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  gr::jmodule::jblock *arg1 = (gr::jmodule::jblock *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "k", NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:jblock_set_k",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_gr__jmodule__jblock, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "jblock_set_k" "', argument " "1"" of type '" "gr::jmodule::jblock *""'"); 
+  }
+  arg1 = reinterpret_cast< gr::jmodule::jblock * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "jblock_set_k" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  {
+    try {
+      (arg1)->set_k(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
   return NULL;
@@ -5631,23 +5744,35 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_jblock_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_jblock_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   boost::shared_ptr< gr::jmodule::jblock > *arg1 = (boost::shared_ptr< gr::jmodule::jblock > *) 0 ;
+  float arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "k", NULL 
+  };
   gr::jmodule::jblock::sptr result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"jblock_sptr_make",1,1,&obj0)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:jblock_sptr_make",kwnames,&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__jmodule__jblock_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "jblock_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::jmodule::jblock > *""'"); 
   }
   arg1 = reinterpret_cast< boost::shared_ptr< gr::jmodule::jblock > * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "jblock_sptr_make" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
   {
     try {
-      result = (*arg1)->make();
+      result = (*arg1)->make(arg2);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5658,6 +5783,83 @@ SWIGINTERN PyObject *_wrap_jblock_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyOb
     
   }
   resultobj = SWIG_NewPointerObj((new gr::jmodule::jblock::sptr(static_cast< const gr::jmodule::jblock::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__jmodule__jblock_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_jblock_sptr_k(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::jmodule::jblock > *arg1 = (boost::shared_ptr< gr::jmodule::jblock > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"jblock_sptr_k",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__jmodule__jblock_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "jblock_sptr_k" "', argument " "1"" of type '" "boost::shared_ptr< gr::jmodule::jblock > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::jmodule::jblock > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->k();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_jblock_sptr_set_k(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::jmodule::jblock > *arg1 = (boost::shared_ptr< gr::jmodule::jblock > *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "k", NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:jblock_sptr_set_k",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__jmodule__jblock_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "jblock_sptr_set_k" "', argument " "1"" of type '" "boost::shared_ptr< gr::jmodule::jblock > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::jmodule::jblock > * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "jblock_sptr_set_k" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  {
+    try {
+      (*arg1)->set_k(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
   return NULL;
@@ -6779,7 +6981,9 @@ static PyMethodDef SwigMethods[] = {
 		"SwigPyIterator___sub__(SwigPyIterator self, SwigPyIterator x) -> ptrdiff_t\n"
 		""},
 	 { (char *)"SwigPyIterator_swigregister", SwigPyIterator_swigregister, METH_VARARGS, NULL},
-	 { (char *)"jblock_make", _wrap_jblock_make, METH_VARARGS, (char *)"jblock_make() -> sptr"},
+	 { (char *)"jblock_make", (PyCFunction) _wrap_jblock_make, METH_VARARGS | METH_KEYWORDS, (char *)"jblock_make(float k) -> sptr"},
+	 { (char *)"jblock_k", _wrap_jblock_k, METH_VARARGS, (char *)"jblock_k(jblock self) -> float"},
+	 { (char *)"jblock_set_k", (PyCFunction) _wrap_jblock_set_k, METH_VARARGS | METH_KEYWORDS, (char *)"jblock_set_k(jblock self, float k)"},
 	 { (char *)"delete_jblock", _wrap_delete_jblock, METH_VARARGS, (char *)"delete_jblock(jblock self)"},
 	 { (char *)"jblock_swigregister", jblock_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_jblock_sptr", _wrap_new_jblock_sptr, METH_VARARGS, (char *)"\n"
@@ -6788,7 +6992,9 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"jblock_sptr___deref__", _wrap_jblock_sptr___deref__, METH_VARARGS, (char *)"jblock_sptr___deref__(jblock_sptr self) -> jblock"},
 	 { (char *)"delete_jblock_sptr", _wrap_delete_jblock_sptr, METH_VARARGS, (char *)"delete_jblock_sptr(jblock_sptr self)"},
-	 { (char *)"jblock_sptr_make", _wrap_jblock_sptr_make, METH_VARARGS, (char *)"jblock_sptr_make(jblock_sptr self) -> sptr"},
+	 { (char *)"jblock_sptr_make", (PyCFunction) _wrap_jblock_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"jblock_sptr_make(jblock_sptr self, float k) -> sptr"},
+	 { (char *)"jblock_sptr_k", _wrap_jblock_sptr_k, METH_VARARGS, (char *)"jblock_sptr_k(jblock_sptr self) -> float"},
+	 { (char *)"jblock_sptr_set_k", (PyCFunction) _wrap_jblock_sptr_set_k, METH_VARARGS | METH_KEYWORDS, (char *)"jblock_sptr_set_k(jblock_sptr self, float k)"},
 	 { (char *)"jblock_sptr_history", _wrap_jblock_sptr_history, METH_VARARGS, (char *)"jblock_sptr_history(jblock_sptr self) -> unsigned int"},
 	 { (char *)"jblock_sptr_output_multiple", _wrap_jblock_sptr_output_multiple, METH_VARARGS, (char *)"jblock_sptr_output_multiple(jblock_sptr self) -> int"},
 	 { (char *)"jblock_sptr_relative_rate", _wrap_jblock_sptr_relative_rate, METH_VARARGS, (char *)"jblock_sptr_relative_rate(jblock_sptr self) -> double"},
