@@ -46,7 +46,7 @@ static const int MAX_OUT=1;
       : gr_sync_block("jblock",
 		      gr_make_io_signature(MIN_IN, MAX_IN, sizeof (float)),
 		      gr_make_io_signature(MIN_IN, MAX_IN, sizeof (float)))
-    {}
+    { d_k = k;}
 
     /*
      * Our virtual destructor.
