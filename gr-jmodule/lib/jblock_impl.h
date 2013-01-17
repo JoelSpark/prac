@@ -29,7 +29,13 @@ namespace gr {
     class jblock_impl : public jblock
     {
     private:
-      // Nothing to declare in this block.
+      
+      SerialPort::BaudRate d_baudrate;
+      SerialPort::CharacterSize d_charsize;
+      SerialPort::StopBits d_stopbits;
+      SerialPort::Parity d_parity;
+      SerialPort::FlowControl d_flowcontrol;
+
     public:
       jblock_impl(float k);
       ~jblock_impl();

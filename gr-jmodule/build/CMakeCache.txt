@@ -233,7 +233,7 @@ SWIG_VERSION:STRING=2.0.4
 _jmodule_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-jmodule;
 
 //Dependencies for the target
-gnuradio-jmodule_LIB_DEPENDS:STATIC=general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/local/lib/libgruel.so;general;/usr/local/lib/libgnuradio-core.so;
+gnuradio-jmodule_LIB_DEPENDS:STATIC=general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/local/lib/libgruel.so;general;/usr/local/lib/libgnuradio-core.so;general;/usr/lib/libserial.so;
 
 //Value Computed by CMake
 gr-jmodule_BINARY_DIR:STATIC=/home/joel/joel/prac/gr-jmodule/build

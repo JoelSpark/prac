@@ -13,6 +13,8 @@ SET(CMAKE_C_INCLUDE_PATH
   "../include"
   "/usr/local/include"
   "/usr/local/include/gnuradio"
+  "/home/joel/temp/uhd/host/include/uhd"
+  "/home/joel/joel/temp/gnuradio/gnuradio-core/src/lib/runtime"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 SET(CMAKE_Fortran_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})

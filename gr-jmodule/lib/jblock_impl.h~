@@ -29,11 +29,16 @@ namespace gr {
     class jblock_impl : public jblock
     {
     private:
-      // Nothing to declare in this block.
-    public:
-      jblock_impl(float);
-      ~jblock_impl();
+      
+      SerialPort::BaudRate d_baudrate;
+      SerialPort::CharacterSize d_charsize;
+      SerialPort::StopBits d_stopbits;
+      SerialPort::Parity d_parity;
+      SerialPort::FlowControl d_flowcontrol;
 
+    public:
+      jblock_impl(float k);
+      ~jblock_impl();
       // Where all the action really happens
       int work(int noutput_items,
 	       gr_vector_const_void_star &input_items,

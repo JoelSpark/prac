@@ -105,8 +105,8 @@ endif()
 set(UHD_DIR ~/temp/uhd/host/include/uhd)
 set(GR_CMPLX_DIR ~/joel/temp/gnuradio/gnuradio-core/src/lib/runtime)
 
-set(LIBSERIAL0_INCL_DIRS /usr/include )
-set(LIBSERIAL0_LIB_DIR /usr/lib /usr/pkgconfig /usr/share/doc)
+set(LIBSERIAL0_INCL_DIR /usr/include)
+set(LIBSERIAL0_LIB_DIR /usr/lib)
 set(LIBSERIAL0_LIB /usr/lib/libserial.so)
 
 include_directories(

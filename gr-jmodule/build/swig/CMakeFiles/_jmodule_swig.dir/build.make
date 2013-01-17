@@ -79,7 +79,7 @@ swig/jmodule_swigPYTHON_wrap.cxx: ../swig/jmodule_swig.i
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/joel/joel/prac/gr-jmodule/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/joel/joel/prac/gr-jmodule/build/swig && /usr/bin/cmake -E make_directory /home/joel/joel/prac/gr-jmodule/build/swig
-	cd /home/joel/joel/prac/gr-jmodule/build/swig && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module jmodule_swig -I/usr/local/include/gnuradio/swig -I/usr/local/include/gruel/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/joel/joel/prac/gr-jmodule/swig -I/home/joel/joel/prac/gr-jmodule/build/swig -outdir /home/joel/joel/prac/gr-jmodule/build/swig -c++ -I/home/joel/joel/prac/gr-jmodule/include -I/usr/include -I/usr/local/include -I/usr/local/include/gnuradio -I/usr/local/include/gnuradio/swig -I/usr/local/include/gruel/swig -I/usr/include/python2.7 -I/home/joel/joel/prac/gr-jmodule/swig -I/home/joel/joel/prac/gr-jmodule/build/swig -o /home/joel/joel/prac/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx /home/joel/joel/prac/gr-jmodule/swig/jmodule_swig.i
+	cd /home/joel/joel/prac/gr-jmodule/build/swig && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module jmodule_swig -I/usr/local/include/gnuradio/swig -I/usr/local/include/gruel/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/joel/joel/prac/gr-jmodule/swig -I/home/joel/joel/prac/gr-jmodule/build/swig -outdir /home/joel/joel/prac/gr-jmodule/build/swig -c++ -I/home/joel/joel/prac/gr-jmodule/include -I/usr/include -I/usr/local/include -I/usr/local/include/gnuradio -I/home/joel/temp/uhd/host/include/uhd -I/home/joel/joel/temp/gnuradio/gnuradio-core/src/lib/runtime -I/usr/local/include/gnuradio/swig -I/usr/local/include/gruel/swig -I/usr/include/python2.7 -I/home/joel/joel/prac/gr-jmodule/swig -I/home/joel/joel/prac/gr-jmodule/build/swig -o /home/joel/joel/prac/gr-jmodule/build/swig/jmodule_swigPYTHON_wrap.cxx /home/joel/joel/prac/gr-jmodule/swig/jmodule_swig.i
 
 swig/jmodule_swig.py: swig/jmodule_swigPYTHON_wrap.cxx
 
@@ -103,6 +103,7 @@ swig/_jmodule_swig.so: /usr/lib/libboost_filesystem-mt.so
 swig/_jmodule_swig.so: /usr/lib/libboost_system-mt.so
 swig/_jmodule_swig.so: /usr/local/lib/libgruel.so
 swig/_jmodule_swig.so: /usr/local/lib/libgnuradio-core.so
+swig/_jmodule_swig.so: /usr/lib/libserial.so
 swig/_jmodule_swig.so: swig/CMakeFiles/_jmodule_swig.dir/build.make
 swig/_jmodule_swig.so: swig/CMakeFiles/_jmodule_swig.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module _jmodule_swig.so"

@@ -13,6 +13,8 @@ SET(CMAKE_C_INCLUDE_PATH
   "../include"
   "/usr/local/include"
   "/usr/local/include/gnuradio"
+  "/home/joel/temp/uhd/host/include/uhd"
+  "/home/joel/joel/temp/gnuradio/gnuradio-core/src/lib/runtime"
   "/usr/local/include/gnuradio/swig"
   "/usr/local/include/gruel/swig"
   "/usr/include/python2.7"

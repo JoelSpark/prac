@@ -81,6 +81,7 @@ lib/libgnuradio-jmodule.so: /usr/lib/libboost_filesystem-mt.so
 lib/libgnuradio-jmodule.so: /usr/lib/libboost_system-mt.so
 lib/libgnuradio-jmodule.so: /usr/local/lib/libgruel.so
 lib/libgnuradio-jmodule.so: /usr/local/lib/libgnuradio-core.so
+lib/libgnuradio-jmodule.so: /usr/lib/libserial.so
 lib/libgnuradio-jmodule.so: lib/CMakeFiles/gnuradio-jmodule.dir/build.make
 lib/libgnuradio-jmodule.so: lib/CMakeFiles/gnuradio-jmodule.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libgnuradio-jmodule.so"

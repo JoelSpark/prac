@@ -5,6 +5,7 @@ lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: ../include/jmodule/api.h
 lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: ../include/jmodule/jblock.h
 lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: ../lib/jblock_impl.cc
 lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: ../lib/jblock_impl.h
+lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: /home/joel/temp/uhd/host/include/uhd/types/time_spec.hpp
 lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: /usr/local/include/gnuradio/gr_basic_block.h
 lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: /usr/local/include/gnuradio/gr_block.h
 lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: /usr/local/include/gnuradio/gr_complex.h
@@ -21,4 +22,5 @@ lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: /usr/local/include/gruel/a
 lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: /usr/local/include/gruel/msg_accepter.h
 lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: /usr/local/include/gruel/pmt.h
 lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: /usr/local/include/gruel/pmt_sugar.h
+lib/CMakeFiles/gnuradio-jmodule.dir/jblock_impl.cc.o: /usr/local/include/uhd/config.hpp
 

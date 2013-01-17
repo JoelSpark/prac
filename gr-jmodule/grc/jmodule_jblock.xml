@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 
-
 <block>
   <name>Jblock</name>
   <key>jmodule_jblock</key>
@@ -24,4 +23,5 @@
     <name>out</name>
     <type>float</type>
   </source>
+
 </block>

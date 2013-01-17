@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /* 
- * Copyright 2013 <+YOU OR YOUR COMPANY+>.
+ * Copyright 2013 NanoSatisfi Inc.
  * 
  * This is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,15 +24,15 @@
 
 #include <jmodule/api.h>
 #include <gr_sync_block.h>
+#include <types/time_spec.hpp>
+#include <gr_complex.h>
+#include <SerialStream.h>
+#include </usr/include/SerialStreamBuf.h>
+#include <SerialPort.h>
 
 namespace gr {
   namespace jmodule {
 
-    /*!
-     * \brief <+description of block+>
-     * \ingroup block
-     *
-     */
     class JMODULE_API jblock : virtual public gr_sync_block
     {
     protected:
@@ -40,14 +40,6 @@ namespace gr {
     public:
        typedef boost::shared_ptr<jblock> sptr;
 
-       /*!
-        * \brief Return a shared_ptr to a new instance of jmodule::jblock.
-        *
-        * To avoid accidental use of raw pointers, jmodule::jblock's
-        * constructor is in a private implementation
-        * class. jmodule::jblock::make is the public interface for
-        * creating new instances.
-        */
        static sptr make(float k);
 
        float k() const {return d_k;}

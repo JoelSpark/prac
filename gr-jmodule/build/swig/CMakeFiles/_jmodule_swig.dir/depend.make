@@ -4,6 +4,7 @@
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: ../include/jmodule/api.h
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: ../include/jmodule/jblock.h
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: swig/jmodule_swigPYTHON_wrap.cxx
+swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: /home/joel/temp/uhd/host/include/uhd/types/time_spec.hpp
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: /usr/include/python2.7/Python.h
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: /usr/include/python2.7/abstract.h
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: /usr/include/python2.7/boolobject.h
@@ -82,4 +83,5 @@ swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: /usr/local/incl
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: /usr/local/include/gruel/msg_accepter.h
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: /usr/local/include/gruel/pmt.h
 swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: /usr/local/include/gruel/pmt_sugar.h
+swig/CMakeFiles/_jmodule_swig.dir/jmodule_swigPYTHON_wrap.cxx.o: /usr/local/include/uhd/config.hpp
 

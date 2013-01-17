@@ -111,6 +111,7 @@ lib/test-jmodule: /usr/lib/libboost_filesystem-mt.so
 lib/test-jmodule: /usr/lib/libboost_system-mt.so
 lib/test-jmodule: /usr/local/lib/libgruel.so
 lib/test-jmodule: /usr/local/lib/libgnuradio-core.so
+lib/test-jmodule: /usr/lib/libserial.so
 lib/test-jmodule: lib/CMakeFiles/test-jmodule.dir/build.make
 lib/test-jmodule: lib/CMakeFiles/test-jmodule.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable test-jmodule"
